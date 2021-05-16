@@ -34,7 +34,7 @@ public class Main {
                 "— Дом, где был — и нет кота.", "кот");
 
         invertWords("This is a test string");
-       
+
 
     }
 
