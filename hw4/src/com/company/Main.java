@@ -100,7 +100,7 @@ public class Main {
 
     }
 
-    //5. Напишите метод, который инвертирует слова в строке. D строке нет знаков препинания, и слова разделены пробелами.
+    //5. Напишите метод, который инвертирует слова в строке. D строке нет знаков препинания и слова разделены пробелами.
     public static void invertWords(String testText){
         System.out.println("------------------------------------");
         StringBuilder strBuilder = new StringBuilder(testText);
