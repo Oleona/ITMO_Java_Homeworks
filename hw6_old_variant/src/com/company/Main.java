@@ -37,6 +37,11 @@ public class Main {
         oldHome.showAllValues();
         oldHome.countAge();
         System.out.println("oldhome is " + oldHome.countAge()+ " years old");
-
+        System.out.println("task4-----------------");
+        Tree tree=new Tree();
+        Tree tree1=new Tree(8,"birch");
+        Tree tree2=new Tree(5,"poplar",true);
+        tree1.GetInfo();
+        tree2.GetInfo();
     }
 }
