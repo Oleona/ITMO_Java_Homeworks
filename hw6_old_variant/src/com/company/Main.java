@@ -26,7 +26,17 @@ public class Main {
         bigCar1.displayInfo();
         smallCar2.displayInfo();
         bigCar2.displayInfo();
-
+        System.out.println("task3-----------------");
+        Home newHome=new Home();
+        newHome.setAllValues(20,2020, "newHome");
+        Home oldHome=new Home();
+        oldHome.setAllValues(3,1950,"oldHome");
+        newHome.showAllValues();
+        newHome.countAge();
+        System.out.println("newhome is "+newHome.countAge()+ " years old");
+        oldHome.showAllValues();
+        oldHome.countAge();
+        System.out.println("oldhome is " + oldHome.countAge()+ " years old");
 
     }
 }
