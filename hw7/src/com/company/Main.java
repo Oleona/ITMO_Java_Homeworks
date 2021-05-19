@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -19,6 +21,12 @@ public class Main {
         System.out.println("Our new cat is "+cat.getAge()+" year");
 		Mecong mecong=new Mecong();
 		System.out.println("Our mecong cat is "+mecong.GetMecongAge()+" year");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Input age: ");
+        cat.newAge= scanner.nextInt();
+
+        System.out.println(mecong.GetNewAge(cat.newAge));
+        System.out.println(" в поле главного класса ввели "+ cat.newAge+ " в методе вывода переменной главного класса из наследника получили " + mecong.GetNewAge(cat.newAge));
 
 		Dog dog=new Dog();
         System.out.println("Our dog is "+ dog.GetParams()+ " year");
