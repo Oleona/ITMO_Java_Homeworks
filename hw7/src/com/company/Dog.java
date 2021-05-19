@@ -5,20 +5,14 @@ import java.util.Scanner;
 public class Dog {
 
     private int age;
-
-    public int getAge() {
-        return age;
-    }
-
-    public int GetParams() {
-
+    private String name;
     Scanner scanner = new Scanner(System.in);
+
+    public void GetParams() {
         System.out.println("Input dog age: ");
-        return  scanner.nextInt();
+        age=scanner.nextInt();
+        System.out.println("Our dog is "+ age+ " year " );
 
 }
-
-
-
 
 }

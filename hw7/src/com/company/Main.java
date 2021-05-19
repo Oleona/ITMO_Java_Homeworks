@@ -29,7 +29,9 @@ public class Main {
         System.out.println(" в поле главного класса ввели "+ cat.newAge+ " в методе вывода переменной главного класса из наследника получили " + mecong.GetNewAge(cat.newAge));
 
 		Dog dog=new Dog();
-        System.out.println("Our dog is "+ dog.GetParams()+ " year");
+        Schnauzer schnauzer=new Schnauzer();
+        dog.GetParams();
+        schnauzer.GetParams();
 
     }
 }
