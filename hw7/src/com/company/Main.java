@@ -33,5 +33,14 @@ public class Main {
         dog.GetParams();
         schnauzer.GetParams();
 
+
+    Plane.Wing wing = new Plane.Wing();
+        wing.setWeight(500);
+        wing.getWingWeight();
+        Plane plane=new Plane();
+        plane.getPlaneWithWing(700);
+        plane.getPlaneWithWing(1400);
+
+
     }
 }
