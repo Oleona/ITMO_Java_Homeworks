@@ -1,29 +1,26 @@
 package com.company;
 
 public class Plane {
-    public void getPlaneWithWing(int wingweight){
-        Wing wing=new Wing();
-        wing.setWeight( wingweight);
+    public void getPlaneWithWing(int wingweight) {
+        Wing wing = new Wing();
+        wing.setWeight(wingweight);
         wing.getWingWeight();
     }
 
 
-
-    static class Wing {
+     public class Wing {
         private int weight;
 
-        public int getWeight(){
+        public int getWeight() {
             return weight;
         }
 
-        public void setWeight(int weight){
-            this.weight=weight;
+        public void setWeight(int weight) {
+            this.weight = weight;
         }
 
-       // public Wing(int weight) {
-       //     this.weight = weight;
-       // }
-        public Wing(){}
+        public Wing() {
+        }
 
         public void getWingWeight() {
             System.out.println("This wing weight is: " + weight);

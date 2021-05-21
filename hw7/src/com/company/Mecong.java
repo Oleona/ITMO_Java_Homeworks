@@ -3,10 +3,10 @@ package com.company;
 public class Mecong extends Cat{
 
     public int GetMecongAge(){
-        return super.getAge();
+        return super.setAge();
     }
-    public int GetNewAge(int newAge){
-        this.newAge=newAge;
+    public int GetNewAge(){
+
         return newAge;
     }
 }
