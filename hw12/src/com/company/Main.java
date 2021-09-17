@@ -15,6 +15,13 @@ public class Main {
         System.out.println(ReturnCollectionNoDuplicates(catBreeds));
         CompareTimeSelectedItems();
         PointsInTheGame();
+        System.out.println("5. Метод получает на вход массив элементов типа К. Вернуть нужно объект Map<K, Integer>, где K — Значение из массива, а Integer\n" +
+                "количество вхождений в массив:");
+        Integer[] nums = {1, 2, 3, 5, 7, 12, 3, 5, 11, 1, 23, 2, 4, 5, 3, 7, 6, 4, 2, 1, 7, 7};
+        String[] catsNames = {"Lans","Gosha","Malish","Zavka","Mario","Lanselot","Silva","Vens", "Rizii","Lans","Malish","Zavka"};
+        System.out.println(arrayToMap(nums));
+        System.out.println(arrayToMap(catsNames));
+
     }
 
     public static void FrequencyDictionary() throws IOException {
@@ -135,6 +142,13 @@ public class Main {
         int point = users.getOrDefault(new User(s), 0);
         System.out.println("Point of this user is:  " + point);
 
+    }
+    public static <K> Map<K, Integer> arrayToMap(K[] ks) {
+
+        Map<K, Integer> map = new HashMap<>();
+        Arrays.stream(ks).forEach(x -> map.put(x , map.computeIfAbsent(x, s -> 0) + 1));
+
+        return map;
     }
 
 }
